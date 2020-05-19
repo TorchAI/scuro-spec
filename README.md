@@ -2,6 +2,8 @@
 
 ScuroQL is a query language for APIs created by TorchAI. 
 
+The ScuroQL will be used accompanied with Scuro Server. The Scuro Server will return the result as requested in a json format.
+
 For more information about Scuro, please refer (here)[https://github.com/TorchAI/scuro].
 
 
@@ -21,7 +23,7 @@ ScuroQL is intuitive and easy to learn. I will try my best to explain the syntax
 
 We are going to understand and write a json request following ScuroQL syntax.
 
-Let's get started by a example!
+Let's get started by an example!
 
 Say, you are developing a question-answering website/app. For a specfic page, you want to get all the users id and their questions id in a json format.
 
@@ -46,7 +48,6 @@ test_array_json = {
 
 Let's break it down.
 
-The ScuroQL will be used accompanied with Scuro Server. The Scuro Server will return the result as you requested in a json format.
 
 The outermost json is:
 
@@ -54,8 +55,8 @@ The outermost json is:
 "Dummy[]": {}
 
 ```
-Here, `Dummy` is the name of the returned result of the json inside its json body .
-`[]` indicates that the json insides the {} will contains all the information of a single, independent, full SQL query.
+Here, `Dummy` will be the name of the returned result of its json body .
+`[]` indicates that the json inside the {} will contain all the information of a single, independent, full SQL query.
 
 
 ```
